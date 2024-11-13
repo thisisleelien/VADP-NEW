@@ -1,0 +1,11 @@
+Model Information:
+* title:	Hand Painted Old Books Geometry Nodes
+* source:	https://sketchfab.com/3d-models/hand-painted-old-books-geometry-nodes-20597aaac311464498943f01a2cb7d1e
+* author:	xvirei (https://sketchfab.com/xvirei)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Hand Painted Old Books Geometry Nodes" (https://sketchfab.com/3d-models/hand-painted-old-books-geometry-nodes-20597aaac311464498943f01a2cb7d1e) by xvirei (https://sketchfab.com/xvirei) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

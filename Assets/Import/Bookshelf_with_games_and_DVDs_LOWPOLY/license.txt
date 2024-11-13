@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bookshelf with games and DVDs LOWPOLY
+* source:	https://sketchfab.com/3d-models/bookshelf-with-games-and-dvds-lowpoly-b9d9b7a77a7540c49543d733865ebca6
+* author:	EFX (https://sketchfab.com/evan4129)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bookshelf with games and DVDs LOWPOLY" (https://sketchfab.com/3d-models/bookshelf-with-games-and-dvds-lowpoly-b9d9b7a77a7540c49543d733865ebca6) by EFX (https://sketchfab.com/evan4129) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
