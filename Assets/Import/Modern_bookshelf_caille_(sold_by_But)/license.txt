@@ -1,0 +1,11 @@
+Model Information:
+* title:	Modern bookshelf "caille" (sold by But)
+* source:	https://sketchfab.com/3d-models/modern-bookshelf-caille-sold-by-but-fb865a7006d941428d830c31dbf3f484
+* author:	tcsala (https://sketchfab.com/tcsala)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Modern bookshelf "caille" (sold by But)" (https://sketchfab.com/3d-models/modern-bookshelf-caille-sold-by-but-fb865a7006d941428d830c31dbf3f484) by tcsala (https://sketchfab.com/tcsala) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

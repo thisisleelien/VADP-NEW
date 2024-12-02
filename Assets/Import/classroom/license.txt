@@ -1,0 +1,11 @@
+Model Information:
+* title:	classroom
+* source:	https://sketchfab.com/3d-models/classroom-69621533a4804d9fba6fe563b2c953f0
+* author:	radhitangga17 (https://sketchfab.com/radhitangga17)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "classroom" (https://sketchfab.com/3d-models/classroom-69621533a4804d9fba6fe563b2c953f0) by radhitangga17 (https://sketchfab.com/radhitangga17) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
