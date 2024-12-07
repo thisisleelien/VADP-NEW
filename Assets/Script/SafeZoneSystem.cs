@@ -7,6 +7,7 @@ public class SafeZoneSystem : MonoBehaviour
         if (other.gameObject.CompareTag("Civilians"))
         {
             Debug.Log("Save Civilians");
+            
         }
     }
 }
