@@ -1,0 +1,11 @@
+Model Information:
+* title:	old_book_model
+* source:	https://sketchfab.com/3d-models/old-book-model-c309bdd23c4d4a0e9533cd647348174f
+* author:	infoasdd (https://sketchfab.com/infoasd)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "old_book_model" (https://sketchfab.com/3d-models/old-book-model-c309bdd23c4d4a0e9533cd647348174f) by infoasdd (https://sketchfab.com/infoasd) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
