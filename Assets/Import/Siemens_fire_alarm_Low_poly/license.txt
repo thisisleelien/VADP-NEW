@@ -1,0 +1,11 @@
+Model Information:
+* title:	Siemens fire alarm Low poly
+* source:	https://sketchfab.com/3d-models/siemens-fire-alarm-low-poly-220ffc08e13e422090c3a0496060ddd3
+* author:	Avadhoot (https://sketchfab.com/avadhootnb11)
+
+Model License:
+* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Siemens fire alarm Low poly" (https://sketchfab.com/3d-models/siemens-fire-alarm-low-poly-220ffc08e13e422090c3a0496060ddd3) by Avadhoot (https://sketchfab.com/avadhootnb11) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Book(Low Poly)
+* source:	https://sketchfab.com/3d-models/booklow-poly-f5acc4028b8a459397d9b230093ae214
+* author:	CraftDroid (https://sketchfab.com/craftdroid)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Book(Low Poly)" (https://sketchfab.com/3d-models/booklow-poly-f5acc4028b8a459397d9b230093ae214) by CraftDroid (https://sketchfab.com/craftdroid) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
