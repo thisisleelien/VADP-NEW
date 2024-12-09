@@ -1,0 +1,8 @@
+Model Information:
+* title:	Free 3D PBR Low-Poly Furniture Asset Pack
+* source:	https://sketchfab.com/3d-models/free-3d-pbr-low-poly-furniture-asset-pack-6a8da3b22a574a408eebfe9be27a1bd2
+* author:	Ankit Akhauri (https://sketchfab.com/ankitdecore)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

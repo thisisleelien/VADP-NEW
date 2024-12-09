@@ -1,0 +1,11 @@
+Model Information:
+* title:	"2-Seater Sofa Model"
+* source:	https://sketchfab.com/3d-models/2-seater-sofa-model-163866e38e174aeb98c75bec527b16e5
+* author:	Digital DNS Techlab (https://sketchfab.com/digitaldns)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on ""2-Seater Sofa Model"" (https://sketchfab.com/3d-models/2-seater-sofa-model-163866e38e174aeb98c75bec527b16e5) by Digital DNS Techlab (https://sketchfab.com/digitaldns) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
