@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 public class ExtinguishFire : MonoBehaviour
 {
     public ParticleSystem extinguisherEffect;
+    public AudioSource ExtinguishSound;
     public InputActionReference triggerAction;
     public ScoreManager scoreManager;
     
@@ -28,6 +29,7 @@ public class ExtinguishFire : MonoBehaviour
             if (!extinguisherEffect.isPlaying)
             {
                 extinguisherEffect.Play();
+                ExtinguishSound.Play();
             }
         }
         else
@@ -35,6 +37,7 @@ public class ExtinguishFire : MonoBehaviour
             if (extinguisherEffect.isPlaying)
             {
                 extinguisherEffect.Stop();
+                ExtinguishSound.Stop();
             }
         }
     }
