@@ -9,7 +9,6 @@ public class FireableObject : MonoBehaviour
     public ParticleSystem FireParticleEffect;
     
     [Header("Object Stat")]
-    public int Health = 100;
     public bool startFire;
     
     [SerializeField] private bool isExtinguish;
@@ -29,30 +28,5 @@ public class FireableObject : MonoBehaviour
         {
             FireParticleEffect.Play();
         }
-
-        // Start decreasing health
-        if (fireCoroutine == null)
-        {
-            fireCoroutine = StartCoroutine(DecreaseHealthOverTime());
-        }
-    }
-    
-    private IEnumerator DecreaseHealthOverTime()
-    {
-        while (Health > 0 && !isExtinguish)
-        {
-            Health -= 1; 
-            yield return new WaitForSeconds(0.5f);
-        }
-
-        if (Health <= 0)
-        {
-            DestroyObject();
-        }
-    }
-
-    private void DestroyObject()
-    {
-        Destroy(gameObject);
     }
 }

@@ -2408,6 +2408,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1959706022474208735, guid: 1e60d5998091e304a9cbacc91e76392b, type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2572328612767290546, guid: 1e60d5998091e304a9cbacc91e76392b, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -2467,7 +2471,7 @@ PrefabInstance:
     - target: {fileID: 3276343886588185993, guid: 1e60d5998091e304a9cbacc91e76392b, type: 3}
       propertyPath: triggerAction
       value: 
-      objectReference: {fileID: 8557531055204087950, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+      objectReference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 3276343886588185993, guid: 1e60d5998091e304a9cbacc91e76392b, type: 3}
       propertyPath: extinguisherEffect
       value: 
@@ -2476,6 +2480,14 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 2137242875}
+    - target: {fileID: 6301820039519167742, guid: 1e60d5998091e304a9cbacc91e76392b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 42.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301820039519167742, guid: 1e60d5998091e304a9cbacc91e76392b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -72.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
