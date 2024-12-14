@@ -4843,4 +4843,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b2b9eb5b8909724583842c260d6d706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  extinguisherEffect: {fileID: 0}
+  triggerAction: {fileID: 0}
   scoreManager: {fileID: 0}
