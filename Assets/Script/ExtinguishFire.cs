@@ -1,35 +1,46 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class ExtinguishFire : MonoBehaviour
 {
-    public ParticleSystem extinguisherEffect;
-    public AudioSource ExtinguishSound;
-    public InputActionReference triggerAction;
+    public ParticleSystem extinguisherEffect; // Spray particle system
+    public InputActionReference triggerAction; // Trigger input (spray action)
+    public InputActionReference unlockAction; // A button input (unlock action)
+    public Transform extinguisherPin; // Reference to the pin object
     public ScoreManager scoreManager;
-    
-    
+
+    private bool isUnlocked = false; // State for unlocking
+
     private void OnEnable()
     {
         triggerAction.action.Enable();
+        unlockAction.action.Enable();
     }
 
     private void OnDisable()
     {
         triggerAction.action.Disable();
+        unlockAction.action.Disable();
     }
-    
+
     private void Update()
     {
+        // Check if the A button is pressed to unlock
+        if (unlockAction.action.WasPerformedThisFrame() && !isUnlocked)
+        {
+            UnlockExtinguisher();
+        }
+
+        // Check if the trigger button is pressed for spraying
         if (triggerAction.action.IsPressed())
         {
-            if (!extinguisherEffect.isPlaying)
+            if (isUnlocked && !extinguisherEffect.isPlaying)
             {
                 extinguisherEffect.Play();
-                ExtinguishSound.Play();
             }
         }
         else
@@ -37,11 +48,24 @@ public class ExtinguishFire : MonoBehaviour
             if (extinguisherEffect.isPlaying)
             {
                 extinguisherEffect.Stop();
-                ExtinguishSound.Stop();
             }
         }
     }
-    
+
+    private void UnlockExtinguisher()
+    {
+        isUnlocked = true; // Update state
+        //Debug.Log("Extinguisher unlocked!");
+
+        // Optional: Animate or move the pin to simulate removal
+        if (extinguisherPin != null)
+        {
+            extinguisherPin.gameObject.SetActive(false); // Hide pin
+            // Alternatively, use an animation or position adjustment:
+            // extinguisherPin.localPosition += new Vector3(0, 0.1f, 0);
+        }
+    }
+
     private void OnParticleCollision(GameObject other)
     {
         if (other.CompareTag("fire"))

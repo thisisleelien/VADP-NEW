@@ -5,7 +5,7 @@ public class VictimGrabHandler : MonoBehaviour
 {
     public GameObject chestVictim; // Cube in front of the chest to activate/deactivate
     public XRGrabInteractable grabInteractable;
-    public MeshRenderer meshRenderer;
+    public SkinnedMeshRenderer[] skinnedMeshRenderers; // Array for multiple SkinnedMeshRenderers
 
     private void OnEnable()
     {
@@ -27,10 +27,10 @@ public class VictimGrabHandler : MonoBehaviour
             chestVictim.SetActive(true);
         }
 
-        if (meshRenderer != null)
+        // Disable all SkinnedMeshRenderers
+        foreach (var renderer in skinnedMeshRenderers)
         {
-            // Disable the mesh renderer of the grabbed object
-            meshRenderer.enabled = false;
+            renderer.enabled = false;
         }
     }
 
@@ -38,14 +38,17 @@ public class VictimGrabHandler : MonoBehaviour
     {
         if (chestVictim != null)
         {
+            transform.position = chestVictim.transform.position;
+            transform.rotation = chestVictim.transform.rotation;
+
             // Deactivate the chest cube
             chestVictim.SetActive(false);
         }
 
-        if (meshRenderer != null)
+        // Enable all SkinnedMeshRenderers
+        foreach (var renderer in skinnedMeshRenderers)
         {
-            // Enable the mesh renderer of the released object
-            meshRenderer.enabled = true;
+            renderer.enabled = true;
         }
     }
 }
