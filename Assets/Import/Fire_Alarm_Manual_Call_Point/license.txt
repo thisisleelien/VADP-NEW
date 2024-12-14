@@ -1,0 +1,8 @@
+Model Information:
+* title:	Fire Alarm Manual Call Point
+* source:	https://sketchfab.com/3d-models/fire-alarm-manual-call-point-e8a13e0c060649ca8c75baff5e779708
+* author:	Lucas Entertainment (https://sketchfab.com/lucas_entertainment)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

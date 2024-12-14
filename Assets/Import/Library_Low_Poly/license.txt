@@ -1,0 +1,11 @@
+Model Information:
+* title:	Library Low Poly
+* source:	https://sketchfab.com/3d-models/library-low-poly-63cdb3712cb944699b131a3766539d90
+* author:	Dante Rossi - Zion (https://sketchfab.com/rossidante)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Library Low Poly" (https://sketchfab.com/3d-models/library-low-poly-63cdb3712cb944699b131a3766539d90) by Dante Rossi - Zion (https://sketchfab.com/rossidante) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

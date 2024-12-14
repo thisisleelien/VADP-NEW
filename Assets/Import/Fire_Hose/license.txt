@@ -1,0 +1,11 @@
+Model Information:
+* title:	Fire Hose
+* source:	https://sketchfab.com/3d-models/fire-hose-224c1b9c08c346ba85995b6c930efec9
+* author:	NurulAthyrah (https://sketchfab.com/Nurul_Athyrah)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Fire Hose" (https://sketchfab.com/3d-models/fire-hose-224c1b9c08c346ba85995b6c930efec9) by NurulAthyrah (https://sketchfab.com/Nurul_Athyrah) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
