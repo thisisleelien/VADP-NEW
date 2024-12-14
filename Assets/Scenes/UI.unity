@@ -1318,7 +1318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.77379084, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.89343774, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2490,7 +2490,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901174808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2498,7 +2498,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16.2, y: 18.7}
+  m_AnchoredPosition: {x: 16.2, y: 18}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1901174810
@@ -2523,8 +2523,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Save lives and extinguish fires within the available time!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 38ca40a72c128c64396123d5ba57b79c, type: 2}
-  m_sharedMaterial: {fileID: 3372795285134719478, guid: 38ca40a72c128c64396123d5ba57b79c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 49e03127a114ad244bd469acd73c06c5, type: 2}
+  m_sharedMaterial: {fileID: 31835862975334419, guid: 49e03127a114ad244bd469acd73c06c5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2548,8 +2548,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 11.23
+  m_fontSizeBase: 11.23
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2584,7 +2584,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 37.033325, y: 0.009713173, z: 67.75845, w: -12.228172}
+  m_margin: {x: 37.370464, y: 0.009713173, z: 69.780334, w: -12.228172}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
