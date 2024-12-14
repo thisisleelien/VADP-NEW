@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Civilians
   - fire
+  - Extinguisher
+  - Victims
   layers:
   - Default
   - TransparentFX
