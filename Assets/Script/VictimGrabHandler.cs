@@ -1,69 +1,54 @@
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class VictimGrabHandler : MonoBehaviour
 {
-    public Transform chestPosition; // Reference to the chest position transform (empty GameObject or chest bone)
-    private XRGrabInteractable grabInteractable;
-    private InputDevice leftControllerDevice; // Input device for the left controller
-    private InputDevice rightControllerDevice; // Input device for the right controller
-    private bool isHoldingBothGrabButtons = false;
+    public GameObject chestVictim; // Cube in front of the chest to activate/deactivate
+    public XRGrabInteractable grabInteractable;
+    public SkinnedMeshRenderer[] skinnedMeshRenderers; // Array for multiple SkinnedMeshRenderers
 
-    private void Awake()
+    private void OnEnable()
     {
-        grabInteractable = GetComponent<XRGrabInteractable>();
+        grabInteractable.selectEntered.AddListener(OnGrab);
+        grabInteractable.selectExited.AddListener(OnRelease);
     }
 
-    private void Start()
+    private void OnDisable()
     {
-        // Get the devices for the controllers (left and right)
-        List<InputDevice> devices = new List<InputDevice>();
-        InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.HeldInHand | InputDeviceCharacteristics.Left, devices);
-        if (devices.Count > 0)
+        grabInteractable.selectEntered.RemoveListener(OnGrab);
+        grabInteractable.selectExited.RemoveListener(OnRelease);
+    }
+
+    private void OnGrab(SelectEnterEventArgs args)
+    {
+        if (chestVictim != null)
         {
-            leftControllerDevice = devices[0];
+            // Activate the chest cube
+            chestVictim.SetActive(true);
         }
 
-        devices.Clear();
-        InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.HeldInHand | InputDeviceCharacteristics.Right, devices);
-        if (devices.Count > 0)
+        // Disable all SkinnedMeshRenderers
+        foreach (var renderer in skinnedMeshRenderers)
         {
-            rightControllerDevice = devices[0];
+            renderer.enabled = false;
         }
     }
 
-    private void Update()
+    private void OnRelease(SelectExitEventArgs args)
     {
-        // Check if the grip buttons are pressed on both controllers
-        bool leftGrabPressed = leftControllerDevice.TryGetFeatureValue(CommonUsages.gripButton, out bool leftPressed) && leftPressed;
-        bool rightGrabPressed = rightControllerDevice.TryGetFeatureValue(CommonUsages.gripButton, out bool rightPressed) && rightPressed;
-
-        // If both grab buttons are pressed, move the object to the chest and disable the grab interactable
-        if (leftGrabPressed && rightGrabPressed && !isHoldingBothGrabButtons)
+        if (chestVictim != null)
         {
-            isHoldingBothGrabButtons = true;
-            // Move the object to the chest position
-            transform.position = chestPosition.position;
-            transform.rotation = chestPosition.rotation;
+            transform.position = chestVictim.transform.position;
+            transform.rotation = chestVictim.transform.rotation;
 
-            // Disable the grab interactable so it doesn't follow the hand anymore
-            grabInteractable.enabled = false;
+            // Deactivate the chest cube
+            chestVictim.SetActive(false);
         }
-        // If either button is released, reset the object and enable the grab interactable again
-        else if ((!leftGrabPressed || !rightGrabPressed) && isHoldingBothGrabButtons)
-        {
-            isHoldingBothGrabButtons = false;
-            // Optionally, add some physics to make it fall (e.g., Rigidbody if necessary)
-            Rigidbody rb = GetComponent<Rigidbody>();
-            if (rb)
-            {
-                rb.isKinematic = false; // Ensure it's not kinematic and falls
-            }
 
-            // Reset object and enable grabbing again
-            grabInteractable.enabled = true;
+        // Enable all SkinnedMeshRenderers
+        foreach (var renderer in skinnedMeshRenderers)
+        {
+            renderer.enabled = true;
         }
     }
 }

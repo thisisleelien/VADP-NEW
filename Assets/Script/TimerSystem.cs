@@ -42,6 +42,6 @@ public class TimerSystem : MonoBehaviour
     private void OnEnd()
     {
         scoreManager.SetRemainingTime(remainingDuration);
-        print("End");
+        print("TimerEnd");
     }
 }
