@@ -9,6 +9,7 @@ public class TimerSystem : MonoBehaviour
     public int Duration;
     public ScoreManager scoreManager;
     public bool isLevelPass;
+    public bool isTimeEnd;
     
     [SerializeField] private Image uiFill;
     [SerializeField] private TextMeshProUGUI uiText;
@@ -36,12 +37,18 @@ public class TimerSystem : MonoBehaviour
             remainingDuration--;
             yield return new WaitForSeconds(1f);
         }
+
+        if (remainingDuration <= 0)
+        {
+            isTimeEnd = true;
+        }
+
         OnEnd();
     }
 
     private void OnEnd()
     {
         scoreManager.SetRemainingTime(remainingDuration);
-        print("TimerEnd");
+        print("End");
     }
 }

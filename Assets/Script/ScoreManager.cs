@@ -10,6 +10,7 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI Timer;
     public TextMeshProUGUI CiviliansCount;
     public TextMeshProUGUI FireExtinguishCout;
+    public GameObject failMenu;
     
     private int _fireExtinguishCount;
     private int _civiliansRescueCount;
@@ -35,7 +36,12 @@ public class ScoreManager : MonoBehaviour
         {
             OnAllTaskComplete();
         }
-        
+
+        if (timerSystem.isTimeEnd && (isRescue == false || isExtinguish == false))
+        {
+            GameFail();
+        }
+
     }
 
     public void AddFireExtinguish()
@@ -71,5 +77,10 @@ public class ScoreManager : MonoBehaviour
         FireExtinguishCout.text = $"Fires Extinguished Score: {_fireExtinguishCount}";
         
         ResultUI.SetActive(true);
+    }
+
+    private void GameFail()
+    {
+        failMenu.SetActive(true);
     }
 }
