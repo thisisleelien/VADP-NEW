@@ -7,11 +7,13 @@ using UnityEngine.InputSystem;
 public class ExtinguishFire : MonoBehaviour
 {
     public ParticleSystem extinguisherEffect; // Spray particle system
+    public AudioSource extinguishSoundEffect;
     public InputActionReference triggerAction; // Trigger input (spray action)
     public InputActionReference unlockAction; // A button input (unlock action)
     public Transform extinguisherPin; // Reference to the pin object
     public Animator Animation;
     public ScoreManager scoreManager;
+    public bool isExtinguish;
 
     private bool isUnlocked = false; // State for unlocking
 
@@ -25,6 +27,11 @@ public class ExtinguishFire : MonoBehaviour
     {
         triggerAction.action.Disable();
         unlockAction.action.Disable();
+    }
+
+    private void Start()
+    {
+        extinguishSoundEffect = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -41,6 +48,7 @@ public class ExtinguishFire : MonoBehaviour
             if (isUnlocked && !extinguisherEffect.isPlaying)
             {
                 extinguisherEffect.Play();
+                extinguishSoundEffect.Play();
             }
         }
         else
@@ -48,6 +56,7 @@ public class ExtinguishFire : MonoBehaviour
             if (extinguisherEffect.isPlaying)
             {
                 extinguisherEffect.Stop();
+                extinguishSoundEffect.Stop();
             }
         }
     }
@@ -67,13 +76,14 @@ public class ExtinguishFire : MonoBehaviour
         extinguisherPin.gameObject.SetActive(false); // Hide pin
     }
 
-    private void OnParticleCollision(GameObject other)
+    public void OnParticleCollision(GameObject other)
     {
         if (other.CompareTag("fire"))
         {
             other.GetComponent<ParticleSystem>().Stop();
             other.transform.GetChild(2).gameObject.SetActive(true);
             scoreManager.AddFireExtinguish();
+            isExtinguish = true;
         }
     }
 }
