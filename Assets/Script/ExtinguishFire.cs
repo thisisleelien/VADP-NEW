@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -30,7 +29,7 @@ public class ExtinguishFire : MonoBehaviour
     private void Update()
     {
         // Check if the A button is pressed to unlock
-        if (unlockAction.action.WasPerformedThisFrame() && !isUnlocked)
+        if (unlockAction.action.IsPressed() && !isUnlocked)
         {
             UnlockExtinguisher();
         }
@@ -54,7 +53,7 @@ public class ExtinguishFire : MonoBehaviour
 
     private void UnlockExtinguisher()
     {
-        isUnlocked = true; // Update state
+         // Update state
         //Debug.Log("Extinguisher unlocked!");
 
         // Optional: Animate or move the pin to simulate removal
@@ -63,6 +62,7 @@ public class ExtinguishFire : MonoBehaviour
             extinguisherPin.gameObject.SetActive(false); // Hide pin
             // Alternatively, use an animation or position adjustment:
             // extinguisherPin.localPosition += new Vector3(0, 0.1f, 0);
+            isUnlocked = true;
         }
     }
 
