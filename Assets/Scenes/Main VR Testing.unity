@@ -5017,7 +5017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e17cac42d81c0c47b91ed62d5cbe048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Duration: 5
+  Duration: 90
   scoreManager: {fileID: 795296926}
   isLevelPass: 0
   isTimeEnd: 0
