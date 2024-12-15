@@ -7,7 +7,8 @@ using UnityEngine.InputSystem;
 
 public class ExtinguishFire : MonoBehaviour
 {
-    public ParticleSystem extinguisherEffect; // Spray particle system
+    public ParticleSystem extinguisherEffect;
+    public AudioSource ExtinguishSound;
     public InputActionReference triggerAction; // Trigger input (spray action)
     public InputActionReference unlockAction; // A button input (unlock action)
     public Transform extinguisherPin; // Reference to the pin object
