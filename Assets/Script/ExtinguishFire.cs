@@ -10,6 +10,7 @@ public class ExtinguishFire : MonoBehaviour
     public InputActionReference triggerAction; // Trigger input (spray action)
     public InputActionReference unlockAction; // A button input (unlock action)
     public Transform extinguisherPin; // Reference to the pin object
+    public Animator Animation;
     public ScoreManager scoreManager;
 
     private bool isUnlocked = false; // State for unlocking
@@ -53,17 +54,17 @@ public class ExtinguishFire : MonoBehaviour
 
     private void UnlockExtinguisher()
     {
-         // Update state
-        //Debug.Log("Extinguisher unlocked!");
-
-        // Optional: Animate or move the pin to simulate removal
         if (extinguisherPin != null)
         {
-            extinguisherPin.gameObject.SetActive(false); // Hide pin
-            // Alternatively, use an animation or position adjustment:
-            // extinguisherPin.localPosition += new Vector3(0, 0.1f, 0);
+            Animation.SetBool("isPull", true);
+            Invoke(nameof(HideExtinguisherPin), 1f); // Call HideExtinguisherPin after 1 second
             isUnlocked = true;
         }
+    }
+
+    private void HideExtinguisherPin()
+    {
+        extinguisherPin.gameObject.SetActive(false); // Hide pin
     }
 
     private void OnParticleCollision(GameObject other)
